@@ -289,8 +289,8 @@ Edit your NPM reverse proxy configuration for your **Seerr Original** instance
    - Mount them within your docker `compose.yaml` configuration:
      ```
          volumes:
-            - /mnt/ssd-pool/appdata/arr-apps/seerr-original/config/logo_full_original.svg:/app/public/logo_full.svg:ro
-            - /mnt/ssd-pool/appdata/arr-apps/seerr-original/config/logo_stacked_original.svg:/app/public/logo_stacked.svg:ro
+            - /path/to/your/seerr-original/configuration/logo_full_original.svg:/app/public/logo_full.svg:ro
+            - /path/to/your/seerr-original/configuration/logo_stacked_original.svg:/app/public/logo_stacked.svg:ro
      ```
 
 ### Seerr German instance
@@ -524,8 +524,8 @@ Edit your NPM reverse proxy configuration for your **Seerr German** instance
    - Mount them within your docker `compose.yaml` configuration:
      ```
          volumes:
-            - /mnt/ssd-pool/appdata/arr-apps/seerr-german/config/logo_full_german.svg:/app/public/logo_full.svg:ro
-            - /mnt/ssd-pool/appdata/arr-apps/seerr-german/config/logo_stacked_german.svg:/app/public/logo_stacked.svg:ro
+            - /path/to/your/seerr-german/configuration/logo_full_german.svg:/app/public/logo_full.svg:ro
+            - /path/to/your/seerr-german/configuration/logo_stacked_german.svg:/app/public/logo_stacked.svg:ro
      ```
 
 ### Advanced Configuration
