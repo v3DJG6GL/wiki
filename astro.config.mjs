@@ -22,7 +22,7 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						// { label: 'Example Guide', slug: 'guides/example' },
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Connecting Seerr instances', slug: 'guides/seerr' },
+						{ label: 'Connecting Seerr instances', slug: 'guides/connecting_seerr_instances' },
 					],
 				},
 				// {
