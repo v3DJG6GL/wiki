@@ -6,8 +6,11 @@ head:
     content: ":root { --sl-content-width: 80rem !important; }"
 ---
 :::note
-This guide shows how to (visually) *connect* multiple Seerr instances to handle multiple requests for the same movie/series in different audio languages!
-The focus is on connecting two Seerr instances: One for requests in the original language, and one for German-dubbed releases. If you intend to use your Seerr instances for other languages, you will need to adjust the configuration.
+This guide shows how to *visually connect* multiple Seerr instances to handle multiple requests for the same movie/series in different audio languages!  
+The focus is on connecting two Seerr instances: **One** for requests in the **original language**, and one for **German-dubbed** releases.  
+If you intend to use your Seerr instances for other languages, you will need to adjust the configuration.  
+The modifications are **purely visual** – nothing is changed in the Seer codebase!  
+These changes are made solely by **injecting CSS/JS** with the help of your NGINX reverse proxy :)
 :::
 
 ## Introduction
