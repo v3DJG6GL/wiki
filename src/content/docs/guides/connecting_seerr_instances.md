@@ -33,15 +33,15 @@ Using this, I was able to inject specific **buttons**, **links** and **info boxe
 ### Login Page
 | Seerr Original | Seerr German |
 |----------|----------|
-| ![Seerr Original Language Login Page](../../../assets/seerr/seerr_original_login_page.png) | ![Seerr German Login Page](../../../assets/seerr/seerr_german_login_page.png) |
+| ![Seerr Original Language Login Page](../../../assets/connecting_seerr_instances/seerr_original_login_page.png) | ![Seerr German Login Page](../../../assets/connecting_seerr_instances/seerr_german_login_page.png) |
 ### Movie Page
 | Seerr Original | Seerr German |
 |----------|----------|
-| ![Seerr Original Language Movie Page](../../../assets/seerr/seerr_original_movie_page.png) | ![Seerr German Movie Page](../../../assets/seerr/seerr_german_movie_page.png) |
+| ![Seerr Original Language Movie Page](../../../assets/connecting_seerr_instances/seerr_original_movie_page.png) | ![Seerr German Movie Page](../../../assets/connecting_seerr_instances/seerr_german_movie_page.png) |
 ### Request Modal
 | Seerr Original | Seerr German |
 |----------|----------|
-| ![Seerr Original Language Movie Request Modal](../../../assets/seerr/seerr_original_movie_request_modal.png) | ![Seerr German Movie Request Modal](../../../assets/seerr/seerr_german_movie_request_modal.png) |
+| ![Seerr Original Language Movie Request Modal](../../../assets/connecting_seerr_instances/seerr_original_movie_request_modal.png) | ![Seerr German Movie Request Modal](../../../assets/connecting_seerr_instances/seerr_german_movie_request_modal.png) |
 
 ### References
 - **Seerr:** [github.com/seerr-team/seerr](https://github.com/seerr-team/seerr)
@@ -284,8 +284,8 @@ Edit your NPM reverse proxy configuration for your **Seerr Original** instance
 
 5. Additionally, you could also replace the **default Seerr logos**
    - Upload these logos to your seerr configuration directory (e.g. `/path/to/your/seerr-original/configuration/`)
-      - [logo_full_original.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/seerr/logo_full_original.svg)
-      - [logo_stacked_original.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/seerr/logo_stacked_original.svg)
+      - [logo_full_original.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_full_original.svg)
+      - [logo_stacked_original.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_stacked_original.svg)
    - Mount them within your docker `compose.yaml` configuration:
      ```
          volumes:
@@ -519,8 +519,8 @@ Edit your NPM reverse proxy configuration for your **Seerr German** instance
      ```
 4. Additionally, you could also replace the **default Seerr logos**
    - Upload these logos to your seerr configuration directory (e.g. `/path/to/your/seerr-german/configuration/`)
-      - [logo_full_german.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/seerr/logo_full_german.svg)
-      - [logo_stacked_german.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/seerr/logo_stacked_german.svg)
+      - [logo_full_german.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_full_german.svg)
+      - [logo_stacked_german.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_stacked_german.svg)
    - Mount them within your docker `compose.yaml` configuration:
      ```
          volumes:
