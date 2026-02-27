@@ -19,18 +19,15 @@ Recently, however, some new users have started requesting dubbed releases in Ger
    It is not possible to make a request with several language profiles. As soon as User A requests a movie or series in OL, User B cannot request it a second time with a German language profile. This is also due to the Radarr/Sonarr limitation. They cannot handle multiple language versions of a movie or series. Furthermore, Seer does not allow more than one Radarr/Sonarr instance to be connected, except for a 4K server. However, this will not help with this specific setup.
 2. **Manual interaction is needed**  
    As soon as User B wants to request a movie or series that has already been requested in OL, they cannot request it again in German Dubbed. They then need to report an issue or get in touch with me so that I can download the movie or series in their preferred language 
-3. **DL releases are not a solution**  
+3. **DL (Dual Language) releases are not a general solution**  
    Yes, I could set the Radarr/Sonarr profile to German + OL, which would then prioritise DL releases with German and OL language tracks. However, the selection of releases with German dubbing is much smaller than releases with OL, and not everything is available with a German dubbing track anyway.
 
-I therefore had to partially duplicate my setup: I deployed a second Radarr, Sonarr and Seer instance specifically for German dubbed requests.
+I therefore had to partially duplicate my setup: I **deployed a second Radarr, Sonarr and Seer** instance specifically for German dubbed requests.
 
-However, I've noticed that this might confuse some of my friends. They might not understand which Seer instance they need to use for which language profile request.
-
-I've wanted to integrate these two Seer instances more closely.
-
-That's where the sub_filter functionality of NGINX comes into action.
-
-Using this, I was able to inject specific buttons and links into the WebUI of Seerr.
+However, I've noticed that this might confuse some of my friends. They might not understand which Seer instance they need to use for which language profile request.  
+I've wanted to integrate these two Seer instances more closely.  
+That's where the **sub_filter** functionality of **NGINX** comes into action.  
+Using this, I was able to inject specific **buttons**, **links** and **info boxes** into the WebUI of Seerr.
 
 ## Preview
 ### Login Page
@@ -46,11 +43,17 @@ Using this, I was able to inject specific buttons and links into the WebUI of Se
 |----------|----------|
 | ![Seerr Original Language Movie Request Modal](../../../assets/seerr/seerr_original_movie_request_modal.png) | ![Seerr German Movie Request Modal](../../../assets/seerr/seerr_german_movie_request_modal.png) |
 
+### References
+- **Seerr:** [github.com/seerr-team/seerr](https://github.com/seerr-team/seerr)
+- **Radarr:** [github.com/Radarr/Radarr](https://github.com/Radarr/Radarr)
+- **Sonarr:** [github.com/Sonarr/Sonarr](https://github.com/Sonarr/Sonarr)
+- **NPM** (NginxProxyManager): [github.com/NginxProxyManager/nginx-proxy-manager](https://github.com/NginxProxyManager/nginx-proxy-manager) 
+
 ## Prerequisites
-- 2 Seerr instances (Docker deployment)
-- 2 Radarr instances
-- 2 Sonarr instances
-- NPM (NGINX) reverse proxy
+- **2 Seerr** instances (Docker deployment)
+- **2 Radarr** instances
+- **2 Sonarr** instances
+- **NPM** (NGINX) reverse proxy in front of your Seerr instances
 
 ## Setup
 ### Seerr Original instance
@@ -281,8 +284,8 @@ Edit your NPM reverse proxy configuration for your **Seerr Original** instance
 
 5. Additionally, you could also replace the **default Seerr logos**
    - Upload these logos to your seerr configuration directory (e.g. `/path/to/your/seerr-original/configuration/`)
-      - [logo_full_original.svg](../../../assets/seerr/logo_full_original.svg)
-      - [logo_stacked_original.svg](../../../assets/seerr/logo_stacked_original.svg)
+      - [logo_full_original.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/seerr/logo_full_original.svg)
+      - [logo_stacked_original.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/seerr/logo_stacked_original.svg)
    - Mount them within your docker `compose.yaml` configuration:
      ```
          volumes:
@@ -516,8 +519,8 @@ Edit your NPM reverse proxy configuration for your **Seerr German** instance
      ```
 4. Additionally, you could also replace the **default Seerr logos**
    - Upload these logos to your seerr configuration directory (e.g. `/path/to/your/seerr-german/configuration/`)
-      - [logo_full_german.svg](../../../assets/seerr/logo_full_german.svg)
-      - [logo_stacked_german.svg](../../../assets/seerr/logo_stacked_german.svg)
+      - [logo_full_german.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/seerr/logo_full_german.svg)
+      - [logo_stacked_german.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/seerr/logo_stacked_german.svg)
    - Mount them within your docker `compose.yaml` configuration:
      ```
          volumes:
