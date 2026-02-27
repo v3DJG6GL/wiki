@@ -10,6 +10,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'v3DJG6GL | Wiki',
+			lastUpdated: true,
 			tableOfContents: { minLevel: 6, maxLevel: 6 },  // only h2, no h3 sub-entries
 			plugins: [
 				starlightImageZoom()
