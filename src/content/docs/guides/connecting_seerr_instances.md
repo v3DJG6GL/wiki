@@ -262,33 +262,33 @@ Edit your NPM reverse proxy configuration for your **Seerr Original** instance
 
    </details>
 
-   3. Configure the template to your needs. Preferably using **Find & Replace** (e.g. `CTRL+R`/`CTRL+F`) function of your text editor:
-   - Adjust the URL of your **Seerr German** instance:
-     ```
-     https://YOUR-SEERR-GERMAN-INSTANCE.DOMAIN.TLD
-     ```
-   - Adjust the text of buttons **[↗ Request 🇩🇪]** (*optionally*)
-     ```
-     sp.textContent = "\u2197 Request \uD83C\uDDE9\uD83C\uDDEA";
-     ```
-     ```
-     mbtn.textContent = "\u2197 Request \uD83C\uDDE9\uD83C\uDDEA";
-     ```
-   - Adjust the text of **warning box** (*optionally*)
-     ```
-     box.innerHTML = "\u26a0\ufe0f <span>Film/Serie wird <strong>in Originalsprache</strong> requested.<br>F\u00fcr Requests mit \uD83C\uDDE9\uD83C\uDDEA-Synchronspur auf den «<strong>\u2197 Request \uD83C\uDDE9\uD83C\uDDEA</strong>» Button klicken!</span>";
-     ```
-   - Adjust the text of sidebar navigation button **[Seerr (🇩🇪-Synchro)]** (*optionally*)
-     ```
-     span.textContent = "Seerr (\uD83C\uDDE9\uD83C\uDDEA-Synchro)";
-     ```
-   - Adjust the text of injected login page button **[Für Requests mit 🇩🇪-Synchronspur hier klicken!]** (*optionally*)
-     ```
-     btn.textContent = "F\u00fcr Requests mit \uD83C\uDDE9\uD83C\uDDEA-Synchronspur hier klicken!";
-     ```
-4. Use the *Cutom Location* gear Icon and add the configured NGINX configuration!
+3. Configure the template to your needs. Preferably using **Find & Replace** (e.g. `CTRL+R`/`CTRL+F`) function of your text editor:
+  - Adjust the URL of your **Seerr German** instance:
+    ```
+    https://YOUR-SEERR-GERMAN-INSTANCE.DOMAIN.TLD
+    ```
+  - Adjust the text of buttons **[↗ Request 🇩🇪]** (*optionally*)
+    ```
+    sp.textContent = "\u2197 Request \uD83C\uDDE9\uD83C\uDDEA";
+    ```
+    ```
+    mbtn.textContent = "\u2197 Request \uD83C\uDDE9\uD83C\uDDEA";
+    ```
+  - Adjust the text of **warning box** (*optionally*)
+    ```
+    box.innerHTML = "\u26a0\ufe0f <span>Film/Serie wird <strong>in Originalsprache</strong> requested.<br>F\u00fcr Requests mit \uD83C\uDDE9\uD83C\uDDEA-Synchronspur auf den «<strong>\u2197 Request \uD83C\uDDE9\uD83C\uDDEA</strong>» Button klicken!</span>";
+    ```
+  - Adjust the text of sidebar navigation button **[Seerr (🇩🇪-Synchro)]** (*optionally*)
+    ```
+    span.textContent = "Seerr (\uD83C\uDDE9\uD83C\uDDEA-Synchro)";
+    ```
+  - Adjust the text of injected login page button **[Für Requests mit 🇩🇪-Synchronspur hier klicken!]** (*optionally*)
+    ```
+    btn.textContent = "F\u00fcr Requests mit \uD83C\uDDE9\uD83C\uDDEA-Synchronspur hier klicken!";
+    ```
+4. Back to your **NPM Reverse Proxy** configuration: Use the *Cutom Location* gear Icon, copy-paste the adjusted NGINX configuration and click **Save**!
 
-5. Additionally, you could also replace the **default Seerr logos**
+5. Additionally, you could also replace the **default Seerr logos**:
    - Upload these logos to your seerr configuration directory (e.g. `/path/to/your/seerroriginal/configuration/`)
       - [logo_full_original.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_full_original.svg)
       - [logo_stacked_original.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_stacked_original.svg)
@@ -523,7 +523,9 @@ Edit your NPM reverse proxy configuration for your **Seerr German** instance
      ```
      btn.textContent = "F\u00fcr Requests in Originalsprache hier klicken!";
      ```
-4. Additionally, you could also replace the **default Seerr logos**
+4. Back to your **NPM Reverse Proxy** configuration: Use the *Cutom Location* gear Icon, copy-paste the adjusted NGINX configuration and click **Save**!
+
+5. Additionally, you could also replace the **default Seerr logos**:
    - Upload these logos to your seerr configuration directory (e.g. `/path/to/your/seerrgerman/configuration/`)
       - [logo_full_german.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_full_german.svg)
       - [logo_stacked_german.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_stacked_german.svg)
