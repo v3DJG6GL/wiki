@@ -34,6 +34,9 @@ Using this, I was able to inject specific **buttons**, **links** and **info boxe
 
 ## Preview
 ### Login Page
+:::note
+I've added more CSS/JS modifications. That's why I have e.g. no login form but a QuickConnect button.
+:::
 | Seerr Original | Seerr German |
 |----------|----------|
 | ![Seerr Original Language Login Page](../../../assets/connecting_seerr_instances/seerr_original_login_page.png) | ![Seerr German Login Page](../../../assets/connecting_seerr_instances/seerr_german_login_page.png) |
@@ -64,7 +67,7 @@ Edit your NPM reverse proxy configuration for your **Seerr Original** instance
 1. Got to *Custom Locations* and add a new Location:
    - **Location:** `\`
    - **Scheme:** `http`
-   - **Forward Hostname / IP:** `seerr-original` (or whatever hostname/IP you've set)
+   - **Forward Hostname / IP:** `seerroriginal` (or whatever hostname/IP you've set)
    - **Forward Port**: `5055` (or whatever Port you've set)
 2. Next, copy-paste this **NGINX configuration template** into your text editor:
    <details>
@@ -286,14 +289,14 @@ Edit your NPM reverse proxy configuration for your **Seerr Original** instance
 4. Use the *Cutom Location* gear Icon and add the configured NGINX configuration!
 
 5. Additionally, you could also replace the **default Seerr logos**
-   - Upload these logos to your seerr configuration directory (e.g. `/path/to/your/seerr-original/configuration/`)
+   - Upload these logos to your seerr configuration directory (e.g. `/path/to/your/seerroriginal/configuration/`)
       - [logo_full_original.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_full_original.svg)
       - [logo_stacked_original.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_stacked_original.svg)
    - Mount them within your docker `compose.yaml` configuration:
      ```
          volumes:
-            - /path/to/your/seerr-original/configuration/logo_full_original.svg:/app/public/logo_full.svg:ro
-            - /path/to/your/seerr-original/configuration/logo_stacked_original.svg:/app/public/logo_stacked.svg:ro
+            - /path/to/your/seerroriginal/configuration/logo_full_original.svg:/app/public/logo_full.svg:ro
+            - /path/to/your/seerroriginal/configuration/logo_stacked_original.svg:/app/public/logo_stacked.svg:ro
      ```
 
 ### Seerr German instance
@@ -301,7 +304,7 @@ Edit your NPM reverse proxy configuration for your **Seerr German** instance
 1. Got to *Custom Locations* and add a new Location:
    - **Location:** `\`
    - **Scheme:** `http`
-   - **Forward Hostname / IP:** `seerr-german` (or whatever hostname/IP you've set)
+   - **Forward Hostname / IP:** `seerrgerman` (or whatever hostname/IP you've set)
    - **Forward Port**: `5055` (or whatever Port you've set)
 2. Next, copy-paste this **NGINX configuration template** into your text editor:
    <details>
@@ -521,14 +524,14 @@ Edit your NPM reverse proxy configuration for your **Seerr German** instance
      btn.textContent = "F\u00fcr Requests in Originalsprache hier klicken!";
      ```
 4. Additionally, you could also replace the **default Seerr logos**
-   - Upload these logos to your seerr configuration directory (e.g. `/path/to/your/seerr-german/configuration/`)
+   - Upload these logos to your seerr configuration directory (e.g. `/path/to/your/seerrgerman/configuration/`)
       - [logo_full_german.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_full_german.svg)
       - [logo_stacked_german.svg](https://raw.githubusercontent.com/v3DJG6GL/wiki/refs/heads/master/src/assets/connecting_seerr_instances/logo_stacked_german.svg)
    - Mount them within your docker `compose.yaml` configuration:
      ```
          volumes:
-            - /path/to/your/seerr-german/configuration/logo_full_german.svg:/app/public/logo_full.svg:ro
-            - /path/to/your/seerr-german/configuration/logo_stacked_german.svg:/app/public/logo_stacked.svg:ro
+            - /path/to/your/seerrgerman/configuration/logo_full_german.svg:/app/public/logo_full.svg:ro
+            - /path/to/your/seerrgerman/configuration/logo_stacked_german.svg:/app/public/logo_stacked.svg:ro
      ```
 
 ### Advanced Configuration
