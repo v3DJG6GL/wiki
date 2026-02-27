@@ -8,7 +8,7 @@ export default defineConfig({
 	base: '/wiki',
 	integrations: [
 		starlight({
-			title: 'v3DJG6GL | Wiki',
+			title: 'v3DJG6GL | wiki',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
