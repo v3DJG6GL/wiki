@@ -242,7 +242,7 @@ Edit your NPM reverse proxy configuration for your **Seerr Original** instance
       var icon = document.createTextNode("\u2197 ");
       var span = document.createElement("span");
       span.setAttribute("class", "ml-3");
-      span.textContent = "Seerr (\uD83C\uDDE9\uD83C\uDDEA-Synchro)";
+      span.textContent = "Seerr \uD83C\uDDE9\uD83C\uDDEA Synchro";
       link.appendChild(icon);
       link.appendChild(span);
       nav.appendChild(link);
@@ -278,9 +278,9 @@ Edit your NPM reverse proxy configuration for your **Seerr Original** instance
     ```
     box.innerHTML = "\u26a0\ufe0f <span>Film/Serie wird <strong>in Originalsprache</strong> requested.<br>F\u00fcr Requests mit \uD83C\uDDE9\uD83C\uDDEA-Synchronspur auf den «<strong>\u2197 Request \uD83C\uDDE9\uD83C\uDDEA</strong>» Button klicken!</span>";
     ```
-  - Adjust the text of sidebar navigation button **[Seerr (🇩🇪-Synchro)]** (*optionally*)
+  - Adjust the text of sidebar navigation button **[Seerr 🇩🇪 Synchro]** (*optionally*)
     ```
-    span.textContent = "Seerr (\uD83C\uDDE9\uD83C\uDDEA-Synchro)";
+    span.textContent = "Seerr \uD83C\uDDE9\uD83C\uDDEA Synchro";
     ```
   - Adjust the text of injected login page button **[Für Requests mit 🇩🇪-Synchronspur hier klicken!]** (*optionally*)
     ```
@@ -479,7 +479,7 @@ Edit your NPM reverse proxy configuration for your **Seerr German** instance
       var icon = document.createTextNode("\u2197 ");
       var span = document.createElement("span");
       span.setAttribute("class", "ml-3");
-      span.textContent = "Seerr (Original \uD83C\uDFB5)";
+      span.textContent = "Seerr Original \uD83C\uDFB5";
       link.appendChild(icon);
       link.appendChild(span);
       nav.appendChild(link);
@@ -515,9 +515,9 @@ Edit your NPM reverse proxy configuration for your **Seerr German** instance
      ```
      box.innerHTML = "\u26a0\ufe0f <span>Film/Serie wird <strong>mit \uD83C\uDDE9\uD83C\uDDEA-Synchronspur</strong> requested.</br>Für Requests in Originalsprache auf den «<strong>\u2197 Request Original \uD83C\uDFB5</strong>» Button klicken!</span>";
      ```
-   - Adjust the text of sidebar navigation button **[Seerr (Original 🎵)]** (*optionally*)
+   - Adjust the text of sidebar navigation button **[Seerr Original 🎵]** (*optionally*)
      ```
-     span.textContent = "Seerr (Original \uD83C\uDFB5)";
+     span.textContent = "Seerr Original \uD83C\uDFB5";
      ```
    - Adjust the text of injected login page button **[Für Requests mit in Originalsprache hier klicken!]** (*optionally*)
      ```
